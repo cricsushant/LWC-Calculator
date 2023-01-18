@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="Testing for public methods">
+    <Lightning-layout multiple-rows="true">
+      <lightning-layout-item size="9" padding="around-medium">
+        <lightning-input
+          value={value}
+          label="Fruit Name"
+          placeholder="Enter the fruit name"
+          onchange={onInputChange}
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="4" padding="around-medium">
+        <lightning-button
+          label="Click here"
+          variant="brand"
+          onclick={onClickHandler}
+        >
+        </lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item size="9" padding="around-medium">
+        <c-test-public-method-child></c-test-public-method-child>
+      </lightning-layout-item>
+    </Lightning-layout>
+  </lightning-card>
+</template>
